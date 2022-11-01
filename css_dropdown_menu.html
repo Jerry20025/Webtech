@@ -1,0 +1,79 @@
+
+
+<html>
+<head>
+    <title>`substitute(Filename('', 'Page Title'), '^.', '\u&', '')`</title>
+    <style type="text/css" media="all">
+      .menu-bar{
+          background: grey;
+          text-align: center;
+      } 
+      .menu-bar ul li a{
+          text-decoration: none;
+          color: white;
+          font: bold;
+      }
+      .menu-bar ul{
+          display: inline-flex;
+          list-style: none;
+      }
+      .menu-bar ul li{
+          width 100px;
+          margin: 15px;
+          padding:10px;
+      }
+      .active,.menu-bar ul li:hover{
+          background: black;
+          border-radius: 5px;
+      }
+      .sub-menu-1{
+          display: none;
+      }
+     .menu-bar ul li:hover .sub-menu-1{
+          display: block;
+          position: absolute;
+          background: grey;
+          margin-top: 15px;
+          margin-left: -15px;
+         
+      }
+       .menu-bar ul li:hover .sub-menu-1 ul{
+           display: block;
+           margin: 10px;
+          
+       }
+       .menu-bar ul li:hover .sub-menu-1 ul li{
+           border-bottom: 1px dotted white;
+           background: transparent;
+           margin: 10px;
+       }
+        .menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+            border-bottom: none;
+        }
+        .menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+            color: black;
+        }
+                  
+    </style>
+</head>
+<body>
+<div class="menu-bar">
+    <ul>
+        <li class="active"><a href="#">HOME</a></li>
+        <li><a href="#">NOTICE</a></li>
+        <li><a href="#">COURSE</a>
+            <div class="sub-menu-1">
+                <ul class="dropdown-content">
+                    <li><a href="#">COMPUTER ENGINEERING</a></li>
+                    <li><a href="#">ELECTRICAL ENGINEERING</a></li>
+                    <li><a href="#">MECHANICAL ENGINEERING</a></li>
+                    <li><a href="#">MANAGEMENT STUDY</a></li>
+                </ul>
+            </div>
+        
+        </li>
+        <li><a href="#">PLACEMENT</a></li>
+    </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!-- 
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+-->
+
+<html>
+<body>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<p id="demo6"></p>
+<p id="demo7"></p>
+<p id="demo8"></p>
+<p id="demo9"></p>
+<script type="text/javascript" charset="utf-8">
+    const arr=["1","2","3"]; 
+   // splice.arr(2,0,"4");
+    document.getElementById("demo1").innerHTML=arr;
+    
+    arr.push("4"); 
+    document.getElementById("demo2").innerHTML="After Pusing element 4: "+arr;
+    arr.shift(); 
+    document.getElementById("demo3").innerHTML="After shifting operation : "+arr;
+    arr.unshift("0","1");
+    document.getElementById("demo4").innerHTML="After unshifting operation : "+arr;
+    
+    delete arr[4]; 
+    document.getElementById("demo5").innerHTML="After Deleting operation : "+arr;
+    arr.splice(2,2,"5","6","7");
+    document.getElementById("demo6").innerHTML="After Splice operation : "+arr;
+    const sliced=arr.slice(1);  // we can take arr.slice(1,4): this will give new array from postion 1 to (4-1):1,5,6
+    document.getElementById("demo7").innerHTML="After slice operation : " +sliced; //slice doesn't delete any 
+    //element from the array but, creats new array here from positon 1 ,all element will be of sliced array
+    const arr2=arr.concat(sliced);
+    document.getElementById("demo8").innerHTML="After Concating array : given Array+sliced Array operation : " +arr2;
+</script>
+</body>
+</html>

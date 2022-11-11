@@ -1,0 +1,127 @@
+<html>
+<head>
+    <title>Future</title>
+    <style type="text/css" media="all">
+        body{
+            background-color: black;
+        }
+      .menu-bar{
+          background: grey;
+          text-align: center;
+      } 
+      .menu-bar ul li a{
+          text-decoration: none;
+          color: white;
+          font: bold;
+      }
+      .menu-bar ul{
+          display: inline-flex;
+          list-style: none;
+      }
+      .menu-bar ul li{
+          width :100px;
+          margin: 15px;
+          padding:10px;
+      }
+      .active,.menu-bar ul li:hover{
+          background: rgb(50, 44, 44);
+          border-radius: 5px;
+      }
+      .sub-menu {
+          display: none;
+      }
+      
+     .menu-bar ul li:hover .sub-menu {
+          display: block;
+          position: absolute;
+          background: grey;
+          margin-top: 15px;
+          margin-left: -15px;
+         
+      }
+      
+       .menu-bar ul li:hover .sub-menu ul{
+           display: block;
+           margin: 10px;
+          
+       }
+       
+       .menu-bar ul li:hover .sub-menu ul li{
+           border-bottom: 1px dotted white;
+           background: transparent;
+           margin: 10px;
+       }
+       
+        .menu-bar ul li:hover .sub-menu ul li:last-child{
+            border-bottom: none;
+        }
+        
+        .menu-bar ul li:hover .sub-menu ul li a:hover{
+            color: black;
+        }
+        img{
+            margin-left: 35%;
+            margin-top: 100px;
+        }
+        .Content{
+            color: white;
+            text-align: center;
+        }
+        .Content .name {
+            text-align: right;
+            font-family:'Times New Roman', Times, serif ;
+        }
+       
+    </style>
+</head>
+<body>
+<div class="menu-bar">
+    <ul>
+        <li class="active"><a href="#">HOME</a></li>
+        <li><a href="#">FUN</a>
+            <div class="sub-menu">
+                <ul class="dropdown-content">
+                    <li><a href="https://www.netflix.com/">MOVIES</a></li>
+                    <li><a href="https://www.primevideo.com/">WEB SERIES</a></li>
+                    <li><a href="https://www.tataplay.com/">TV SHOW</a></li>
+                    <li><a href="https://www.vootkids.com/">CARTOON</a></li>
+                </ul>
+
+            </div>
+        
+        
+        </li>
+        <li><a href="#">SPORTS</a>
+            <div class="sub-menu">
+                <ul class="dropdown-content">
+                    <li><a href="https://www.hotstar.com/in/sports/cricket">CRICKET</a></li>
+                    <li><a href="https://www.sonyliv.com/live-tv/ten-1-hd-1000009276">FOOTBALL</a></li>
+                </ul>
+            </div>
+        
+        </li>
+        <li><a href="#">STUDY</a>
+            <div class="sub-menu">
+                <ul class="dropdown-content">
+                    <li><a href="#">HIGHER</a></li>
+                    <li><a href="#">GRADUATION</a></li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</div>
+
+
+<img src="img_c.jpg" alt="This_is_an_image">
+<br>
+<div class="Content">
+    <h1>This Website is Design for Practical Purpose </h1>
+    <h2>Design by:</h2>
+    <div class="name">
+        <fieldset>
+            <h1>Anil Kumar , Rajat Singh</h1>
+        </fieldset>
+    </div>
+</div>
+</body>
+</html>
